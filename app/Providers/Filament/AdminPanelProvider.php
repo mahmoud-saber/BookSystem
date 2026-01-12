@@ -54,6 +54,20 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+
+
+            ->profile() //Enable profile for this panel
+            ->simpleProfilePage(false) // Disable simple profile page for this panel
+            ->spa() // Enable SPA mode for this panel
+
+            ->brandLogo('/images/book1.png') // Set the brand logo for this panel
+            ->brandLogoHeight('3rem') // Set the brand logo height for this panel
+
+            ->favicon('/images/book1.png') // Set the favicon for this panel
+            ->sidebarWidth('20rem') // Set the sidebar width for this panel
+            ->sidebarFullyCollapsibleOnDesktop() // Enable full sidebar collapsibility on desktop for this panel
+             
+        ;
     }
 }

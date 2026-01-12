@@ -73,7 +73,9 @@ class BorrowerPanelProvider extends PanelProvider
         // ->sidebarCollapsibleOnDesktop() // Enable sidebar collapsibility on desktop for this panel
            ->sidebarFullyCollapsibleOnDesktop() // Enable full sidebar collapsibility on desktop for this panel
         //    ->topNavigation() // Enable top navigation for this panel
-           ->topbar(false) // Disable topbar for this panel
+        //    ->topbar(false) // Disable topbar for this panel
+        //->topNavigation() // Enable top navigation for this panel
+        ->topNavigation(false) // Disable top navigation for this panel
 
 
 
