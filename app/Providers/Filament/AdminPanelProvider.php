@@ -31,8 +31,8 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
-            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
+            ->discoverResources(in: app_path('Filament/Admin/Resources'), for: 'App\Filament\Admin\Resources')
+            ->discoverPages(in: app_path('Filament/Admin/Pages'), for: 'App\Filament\Admin\Pages')
             ->pages([
                 Dashboard::class,
             ])
@@ -57,7 +57,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->profile()
             ->simpleProfilePage(false)
-
+            ->spa()
 
             ->brandLogo('/images/book1.png')
             ->brandLogoHeight('3rem') // Set the logo height
