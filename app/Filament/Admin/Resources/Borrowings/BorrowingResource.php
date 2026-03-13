@@ -24,7 +24,7 @@ class BorrowingResource extends Resource
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Gift;
     protected static string | UnitEnum | null $navigationGroup = 'Borrowing Management';
 
-    protected static ?string $recordTitleAttribute = 'name';
+    // protected static ?string $recordTitleAttribute = 'name';
 
     public static function form(Schema $schema): Schema
     {
